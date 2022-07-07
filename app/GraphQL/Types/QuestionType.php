@@ -2,7 +2,7 @@
 
 namespace App\GraphQL\Types;
 
-use App\Question;
+use App\Models\Question;
 use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Type as GraphQLType;
 use Rebing\GraphQL\Support\Facades\GraphQL;

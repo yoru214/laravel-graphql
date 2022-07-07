@@ -2,7 +2,7 @@
 
 namespace App\GraphQL\Queries;
 
-use App\Test;
+use App\Models\Test;
 use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Query;

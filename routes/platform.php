@@ -18,6 +18,10 @@ use App\Orchid\Screens\User\UserProfileScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
 
+
+use App\Orchid\Screens\TestEditScreen;
+use App\Orchid\Screens\TestListScreen;
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard Routes
@@ -113,3 +117,20 @@ Route::screen('example-cards', ExampleCardsScreen::class)->name('platform.exampl
 Route::screen('example-advanced', ExampleFieldsAdvancedScreen::class)->name('platform.example.advanced');
 
 //Route::screen('idea', Idea::class, 'platform.screens.idea');
+
+
+
+Route::screen('test/{test?}', TestEditScreen::class)
+    ->name('platform.test.edit');
+    
+// Route::screen('tests', TestListScreen::class)
+//     ->name('platform.test.list');
+
+// Platform > System > Roles
+Route::screen('tests', TestListScreen::class)
+    ->name('platform.test')
+    ->breadcrumbs(function (Trail $trail) {
+        return $trail
+            ->parent('platform.index')
+            ->push(__('Tests'), route('platform.test'));
+    });

@@ -1,11 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Answers;
-use App\Test;
+use App\Models\Answers;
+use App\Models\Test;
 
 class Question extends Model
 {
