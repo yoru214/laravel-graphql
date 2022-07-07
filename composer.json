@@ -11,6 +11,7 @@
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "nuwave/lighthouse": "^5.56",
+        "orchid/platform": "^12.6",
         "rebing/graphql-laravel": "^8.3"
     },
     "require-dev": {
